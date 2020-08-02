@@ -2,7 +2,7 @@
 project_dst='~/Documents/Projects'
 echo 'enter the name of the repo:'
 read repo
-if [[ -d project_dst/$repo || -e project_dst/$repo  ]];then echo " The is already taken in $(readlink -f $project_dst)";exit 1
+if [[ -d project_dst/$repo || -e project_dst/$repo  ]];then echo " The name is already taken in $(readlink -f $project_dst)";exit 1
 fi
 echo 'enter github username:'
 read username
