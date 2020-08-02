@@ -27,4 +27,4 @@ else is_it_private=false
  if [[ -z "$description" ]]; then description='' ;fi
 curl -u  $username https://api.github.com/user/repos -d   "{\"name\":\"$repo\",\"description\":\"$description\",\"private\":$is_it_private }"
 git clone https://github.com/$username/$repo.git
-echo https://github.com/$username/$repo.git
+
